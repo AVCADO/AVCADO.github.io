@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>avcado's project</title>
+    <style>
+      /* Should be kept */
+      #pages {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size:x-large;
+        border: 2px solid black;
+        background-color: gray;
+      }
+      a {
+        color: white;
+      }
+
+      #fuck, .fuck {
+        color:blue;
+      }
+      .vl {
+        border-left: black; /* why not gray? */
+        height: 40px;
+      }
+      .flex-container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- should be present on all pages -->
+    <div id="top" class="flex-container">
+      <div id="pages">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="https://github.com/avcado">Github</a>
+      </div>
+    </div>
+    <div id="under-top" class="flex-container2">
+      <div id="CProj">
+        <h3>Projects written in C</h3>
+      </div>
+      <div id="ASMProj">
+        <h3>Projects written with/in assembly</h3>
+        <a id="fuck" href="https://github.com/avcado/scp-bootsector">SCP CB written into a bootsector</a>
+      </div>
+      <div id="OSDEVPRoj">
+        <h3>OS projects</h3>
+      </div>
+    </div>
+  </body>
+</html>
