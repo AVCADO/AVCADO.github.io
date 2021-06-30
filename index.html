@@ -1,89 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-    <title>zbj</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="testing 123">
+    <title>about me - ababo</title>
+    <link rel="stylesheet" href="index.css">
     <style>
-    	/* Navbar */
-      ul {
-    		list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #282A35;
-      }
+        /* Font imports */
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
-      li {
-        display: inline;
-        float: left;
-      }
+        body {
+            background-color: #36393F;
+        }
 
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-family: 'Nunito', sans-serif;
-      }
+        h1, h2, a {
+            color: white;
+            font-family: 'Nunito';
+        }
 
-      li a:hover {
-        background-color: #111;
-      }
+        #about-wrapper {
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 13%;
+        }
 
-      .active {
-        background-color: #04AA6D;
-      }
+        #about {
+            text-align: center;
+            border: 2px solid #2E3035;
+            border-radius: 20px;
+            background-color: #2E3035;
+        }
 
-      /* Headers */
-      .header {
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 20px;
-        font-family: 'Nunito', sans-serif;
-      }
+        #projects {
+            /* Padding and aligning */
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 10px;
 
-      /* Divs with information */
-      .about {
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 20px;
-        font-family: 'Playfair Display', sans-serif;
-      }
+            /* Border */
+            border: 2px solid #202225;
+            background-color: #202225;
+            border-radius: 20px;
 
-      a {
-        color: blue;
-      }
+        }
+
+        #projects-wrapper {
+            padding-left: 30px;
+            padding-right: 30px;
+            
+        }
+
+        #projects-2 {
+            /* Padding and aligning */
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 10px;
+
+            /* Border */
+            border: 2px solid #714e80;
+            background-color: #714e80;
+            border-radius: 20px;
+            
+        }
     </style>
 </head>
 <body>
-	<div id="navbar">
-		 <ul>
-		  <li class="active"><a href="https://avcado.is-a.dev/">Home</a></li>
-		  <li><a href="https://avcado.is-a.dev/mee7">MEE7</a></li>
-		</ul>
-	</div>
-
-  <br>
-  <br>
-
-  <div class="header">
-    <h1>zbj's website</h1>
-  </div>
-
-  <br>
-
-  <div class="about">
-    <h2>Hi, I'm zbj, a non-binary software developer.</h3>
-    <br>
-    <h2>Notable projects I've worked on:</h3>
-    <h3><a href="https://github.com/avcado/zLang">ZLang: Space based language</a></h3>
-    <h3><a href="https://avcado.is-a.dev/mee7">MEE7: A discord bot based on MEE6</a></h3>
-  </div>
+    <div id="about-wrapper">
+        <div id="about">
+            <h1>ababo</h1>
+            <h1>
+                <a href="https://discord.gg/qND2fjBxes"><img width="50" src="https://discord.com/assets/f9bb9c4af2b9c32a2c5ee0014661546d.png"></a>
+                <a href="https://github.com/zbj2"><img width="50" src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-github-1.png"></a>
+            </h1>
+            <br>
+            <div id="projects-wrapper">
+                <div id="projects">
+                    <h1>d.pl</h1>
+                    <h2>d.pl is a Discord
+                        <br>API Wrapper,
+                        <br>written in Perl.
+                        <br>
+                        <br><a href="https://github.com/zbj2/discord.pl">Github</a> <a href="https://discord.gg/fTagKwunw9">Discord</a></h2>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
 </body>
 </html>
