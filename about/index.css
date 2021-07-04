@@ -1,0 +1,106 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    background-color: #36393F;
+}
+
+h1, h2, a, span {
+    color: white;
+    font-family: 'Nunito';
+}
+
+/* about me */
+
+#about-wrapper {
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 13%;
+}
+
+#about {
+    text-align: center;
+    border: 2px solid #2E3035;
+    border-radius: 20px;
+    background-color: #2E3035;
+}
+
+#projects {
+    /* Padding and aligning */
+    text-align: left;
+    padding-left: 30px;
+    padding-bottom: 10px;
+
+    /* Border */
+    border: 2px solid #202225;
+    background-color: #202225;
+    border-radius: 20px;
+
+}
+
+#projects-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+@keyframes socials {
+    25% {
+        background-color: #714e80;
+        border: 2px solid #714e80;
+    }
+    50% {
+        background-color: #2e0c36;
+        border: 2px solid #2e0c36;
+    }
+    75% {
+        background-color: #714e80;
+        border: 2px solid #714e80;
+    }
+    100% {
+        background-color: #2e0c36;
+        border: 2px solid #2e0c36;
+    }
+}
+
+#social-wrapper {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+#socials {
+    /* styling:) */
+    border: 2px solid #2e0c36;
+    background-color: #2e0c36;
+    border-radius: 20px;
+    animation-name: socials;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* click counter yeah */
+#click-counter-wrapper {
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 13%;
+}
+
+#click-counter {
+    text-align: center;
+    border: 2px solid #2E3035;
+    border-radius: 20px;
+    background-color: #2E3035;
+}
+
+#button {
+    display: inline-block;
+    background-color: #555555;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 14px 60px;
+}
