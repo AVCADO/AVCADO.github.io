@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+
+    <title>startpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+        h1, h2, a {
+            font-family: "Nunito";
+            color: white;
+        }
+
+        #media-wrapper {
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 5%;
+        }
+
+        #media {
+            border: 2px solid #2c2f33;
+            border-radius: 20px;
+            background-color: #2c2f33;
+        }
+
+        #work-wrapper {
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+
+        #work {
+            text-align: center;
+            border: 2px solid #2c2f33;
+            border-radius: 20px;
+            background-color: #2c2f33;
+        }
+
+        body {
+            background-color: #23272a;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Welcome, ababo.</h1>
+    <div id="currenTime">
+        <h1 align="center">It is <span id="time"></span></h1>
+    </div>
+    <div id="media-wrapper">
+        <div id="media">
+            <h1 align="center">m e d i a</h1>
+            <h2 align="center"><a href="https://reddit.com">reddit</a></h2>
+            <h2 align="center"><a href="https://youtube.com">youtube</a></h2>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="work-wrapper">
+        <div id="work">
+            <h1>w o r k</h1>
+            <h2><a href="https://docs.google.com/">google docs</a></h1>
+            <h2><a href="https://mail.google.com/">email</a></h1>
+        </div>
+    </div>
+    <script>
+        var tmp = setInterval(myTimer, 1000);
+
+        function myTimer() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("time").innerHTML = t;
+        } 
+    </script>
+</body>
+</html>
