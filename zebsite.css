@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+body {
+	color: rgba(255, 255, 255, 0.75);
+	background-color: rgb(25, 25, 25);
+}
+
+h1, h2 {
+	font-family: "Roboto Mono";
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-family: "Roboto Mono";
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+	animation-name: navbarHover;
+	animation-duration: 2s;
+}
+
+@keyframes navbarHover {
+	from {
+		background-color: #333;
+	}
+	to {
+		background-color: #04aa6d;
+	}
+}
+
+/* Typewriter animation and background and stuff */
+
+.line {
+	position: relative;
+	top: 50%;
+	width: 16em;
+	text-align: center;
+	margin: 0 auto;
+	border-right: 2px solid white;
+	white-space: nowrap;
+	overflow: hidden; transform: translateY(-50%);
+}
+
+.anim-typewriter {
+	animation: typewriter 4s steps(40) 1s 1 normal both,
+	blinkTextCursor 500ms steps(40) infinite normal;
+	font-family: "Anonymous Pro", monospace;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 16em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgb(255, 255, 255);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+
+#main-div1 {
+	padding-top: 1em;
+	padding-left: 4em;
+	text-align: center;
+}
+
+#installpadding {
+	padding-left: 500px;
+	padding-right: 500px;
+}
+
+#installit {
+	height: 40px;
+	background-color: #6b6b6b;
+	color: black;
+	border-radius: 20px;
+}
+
+#examplecommand {
+	font-family: "Anonymous Pro";
+}
